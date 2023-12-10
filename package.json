@@ -1,8 +1,16 @@
 {
-  "name": "pie",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "name": "react-progress-control",
+  "version": "0.0.1",
+  "description": "Pie progress control for React",
+  "author": "uriegel",
+  "license": "MIT",
+  "repository": "uriegel/react-progress-control",
+  "main": "dist/index.js",
+  "files": [
+      "dist"
+  ],
+
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,10 +26,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "do publish test": "npm run typescript && npm run copy &&  npm publish --dry-run",
+    "do publish": "npm run typescript && npm run copy && npm publish",
+    "typescript": "tsc -p src/component",
+    "copy": "cp src/component/Pie.css dist/"
+},
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,0 +1,15 @@
+.progressPie {
+    aspect-ratio: 1;
+    height: 100%;
+}
+
+.progressPieBackground {
+    fill: lightgray;
+}
+.progressPieCircle {
+    fill: transparent;
+    stroke: darkred;
+    stroke-width: 50;
+    transform: rotate(-90deg) translate(-100px)
+}
+
