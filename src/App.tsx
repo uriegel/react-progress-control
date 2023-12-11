@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Pie from './component/Pie'
+import Pie from './component/index'
 
 var prog = 0
 

@@ -1,14 +1,19 @@
+:root {
+    --rpc-background-color: lightgray;
+    --rpc-color: blue;
+}
+
 .progressPie {
     aspect-ratio: 1;
     height: 100%;
 }
 
 .progressPieBackground {
-    fill: lightgray;
+    fill: var(--rpc-background-color);
 }
 .progressPieCircle {
     fill: transparent;
-    stroke: darkred;
+    stroke: var(--rpc-color);
     stroke-width: 50;
     transform: rotate(-90deg) translate(-100px)
 }

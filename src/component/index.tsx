@@ -1,6 +1,8 @@
 import React from 'react'
 import './Pie.css'
 
+const full = 3.14159 * 50
+
 export interface PieProps{
     progress: number
 }
@@ -8,7 +10,7 @@ export interface PieProps{
 const Pie = ({progress}: PieProps) => {
 
     const strokeStyle = {
-        strokeDasharray: `${progress*150} calc(3.14159 * 50)`
+        strokeDasharray: `${progress*full} ${full}`
     }
 
     return (<svg viewBox={"0 0 100 100"} className='progressPie'>
